@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="MTs-r7-4rZ" customClass="HJShoppingCartDeleteBar">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EGV-da-34i">
+                    <rect key="frame" x="0.0" y="13" width="35" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="Mtn-6q-Gsx"/>
+                        <constraint firstAttribute="width" constant="35" id="PjB-Xw-Mgz"/>
+                    </constraints>
+                    <state key="normal" image="ic_b15_xuanzhong"/>
+                    <connections>
+                        <action selector="allSelectButtonClick:" destination="MTs-r7-4rZ" eventType="touchUpInside" id="fce-4S-Lt7"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CLg-O4-24l">
+                    <rect key="frame" x="229" y="16" width="74" height="28"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="74" id="JCu-YF-agf"/>
+                        <constraint firstAttribute="height" constant="28" id="JrB-80-nEN"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="删除">
+                        <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="deleteButtonClick:" destination="MTs-r7-4rZ" eventType="touchUpInside" id="Cjg-oA-TJD"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="全选" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MbV-K1-GoO">
+                    <rect key="frame" x="35" y="20" width="48" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="48" id="Z15-Oy-ORE"/>
+                        <constraint firstAttribute="height" constant="21" id="aZC-5a-H9s"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="CLg-O4-24l" firstAttribute="centerY" secondItem="MTs-r7-4rZ" secondAttribute="centerY" id="5DO-yx-Wme"/>
+                <constraint firstItem="EGV-da-34i" firstAttribute="leading" secondItem="MTs-r7-4rZ" secondAttribute="leading" id="Jfu-I2-1oN"/>
+                <constraint firstItem="MbV-K1-GoO" firstAttribute="leading" secondItem="EGV-da-34i" secondAttribute="trailing" id="c80-Ih-lzP"/>
+                <constraint firstAttribute="trailing" secondItem="CLg-O4-24l" secondAttribute="trailing" constant="17" id="h00-qi-ZDg"/>
+                <constraint firstItem="MbV-K1-GoO" firstAttribute="centerY" secondItem="MTs-r7-4rZ" secondAttribute="centerY" id="lp9-2q-oXO"/>
+                <constraint firstItem="EGV-da-34i" firstAttribute="centerY" secondItem="MTs-r7-4rZ" secondAttribute="centerY" id="ojH-ab-WsZ"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="allSelectButton" destination="EGV-da-34i" id="hit-Ir-KCc"/>
+                <outlet property="deleteButton" destination="CLg-O4-24l" id="Aaq-ZT-J2n"/>
+            </connections>
+            <point key="canvasLocation" x="577" y="193"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_b15_xuanzhong" width="18" height="18"/>
+    </resources>
+</document>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HJSearchBar">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="30"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gpj-8Y-ikA">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="30"/>
+                    <subviews>
+                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="ic_nav_sousuo" translatesAutoresizingMaskIntoConstraints="NO" id="OoL-uA-91f">
+                            <rect key="frame" x="14" y="8" width="14" height="14"/>
+                        </imageView>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CYW-bv-X6h">
+                            <rect key="frame" x="36" y="7" width="276" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="CYW-bv-X6h" firstAttribute="leading" secondItem="OoL-uA-91f" secondAttribute="trailing" constant="8" id="TJ4-2B-XTe"/>
+                        <constraint firstAttribute="trailing" secondItem="CYW-bv-X6h" secondAttribute="trailing" constant="8" id="YIy-aQ-FVY"/>
+                        <constraint firstItem="CYW-bv-X6h" firstAttribute="centerY" secondItem="OoL-uA-91f" secondAttribute="centerY" id="bMS-pm-6st"/>
+                        <constraint firstItem="OoL-uA-91f" firstAttribute="leading" secondItem="gpj-8Y-ikA" secondAttribute="leading" constant="14" id="cxi-Xf-2qC"/>
+                        <constraint firstItem="OoL-uA-91f" firstAttribute="centerY" secondItem="gpj-8Y-ikA" secondAttribute="centerY" id="qtD-YM-Klb"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="gpj-8Y-ikA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="KYm-9x-gTh"/>
+                <constraint firstAttribute="bottom" secondItem="gpj-8Y-ikA" secondAttribute="bottom" id="PmG-PR-eNE"/>
+                <constraint firstAttribute="trailing" secondItem="gpj-8Y-ikA" secondAttribute="trailing" id="lGS-IV-fYg"/>
+                <constraint firstItem="gpj-8Y-ikA" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="njO-HN-Byf"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="backgroundView" destination="gpj-8Y-ikA" id="YQg-jv-e6u"/>
+                <outlet property="searchTextField" destination="CYW-bv-X6h" id="4Qj-k8-jld"/>
+            </connections>
+            <point key="canvasLocation" x="245" y="239"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_nav_sousuo" width="14" height="14"/>
+    </resources>
+</document>

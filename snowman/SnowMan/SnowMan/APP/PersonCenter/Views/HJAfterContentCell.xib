@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="136" id="KGk-i7-Jjw" customClass="HJAfterContentCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="140"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="139"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="售后单号：123456" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aWX-Ji-ctL">
+                        <rect key="frame" x="8" y="8" width="304" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="CCo-uI-6vG"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="dgdsg" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="RZB-qH-ffa">
+                        <rect key="frame" x="8" y="37" width="304" height="94"/>
+                        <color key="backgroundColor" red="0.92156862745098034" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="aWX-Ji-ctL" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="KKU-lT-7LS"/>
+                    <constraint firstItem="RZB-qH-ffa" firstAttribute="top" secondItem="aWX-Ji-ctL" secondAttribute="bottom" constant="8" id="N2m-5A-oVn"/>
+                    <constraint firstItem="aWX-Ji-ctL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="VoQ-Q4-Tah"/>
+                    <constraint firstItem="RZB-qH-ffa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="fm2-If-JaC"/>
+                    <constraint firstItem="RZB-qH-ffa" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="pKz-L4-jby"/>
+                    <constraint firstItem="RZB-qH-ffa" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="sgQ-qG-wf3"/>
+                    <constraint firstItem="aWX-Ji-ctL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="sm5-Pz-itt"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="contentTextView" destination="RZB-qH-ffa" id="Xsq-0S-2lj"/>
+                <outlet property="refundNoLabel" destination="aWX-Ji-ctL" id="ILi-Nh-mku"/>
+            </connections>
+            <point key="canvasLocation" x="432" y="247"/>
+        </tableViewCell>
+    </objects>
+</document>

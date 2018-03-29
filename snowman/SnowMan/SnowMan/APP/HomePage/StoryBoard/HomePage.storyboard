@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Member Sign InVC-->
+        <scene sceneID="MWT-CK-svK">
+            <objects>
+                <viewController storyboardIdentifier="HJMemberSignInVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Agu-vd-3zO" customClass="HJMemberSignInVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="m7g-ej-aAh"/>
+                        <viewControllerLayoutGuide type="bottom" id="qEr-pT-d7F"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7LZ-EU-5xI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  常见积分问题" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GNQ-7K-Y3D">
+                                <rect key="frame" x="0.0" y="210" width="320" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ms7-LP-de2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M1A-xd-p6g">
+                                <rect key="frame" x="-4" y="20" width="328" height="180"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的积分" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sTo-qR-sda">
+                                        <rect key="frame" x="15" y="8" width="56" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.89411764709999997" green="0.23529411759999999" blue="0.2274509804" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GOR-yG-Gpm">
+                                        <rect key="frame" x="38" y="28" width="10" height="20"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" red="0.89411764709999997" green="0.23529411759999999" blue="0.2274509804" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sNJ-pv-jKJ">
+                                        <rect key="frame" x="108" y="34" width="111" height="112"/>
+                                        <state key="normal" image="ic_b4_01"/>
+                                        <connections>
+                                            <action selector="signInAction:" destination="Agu-vd-3zO" eventType="touchUpInside" id="4bo-u3-q5U"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="sTo-qR-sda" firstAttribute="top" secondItem="M1A-xd-p6g" secondAttribute="top" constant="8" id="Igg-iF-pDf"/>
+                                    <constraint firstItem="GOR-yG-Gpm" firstAttribute="centerX" secondItem="sTo-qR-sda" secondAttribute="centerX" id="LPN-hq-EW2"/>
+                                    <constraint firstItem="sNJ-pv-jKJ" firstAttribute="centerX" secondItem="M1A-xd-p6g" secondAttribute="centerX" id="SYy-aw-ykc"/>
+                                    <constraint firstItem="GOR-yG-Gpm" firstAttribute="top" secondItem="sTo-qR-sda" secondAttribute="bottom" constant="3" id="n43-9t-pXH"/>
+                                    <constraint firstItem="sNJ-pv-jKJ" firstAttribute="centerY" secondItem="M1A-xd-p6g" secondAttribute="centerY" id="nFG-dw-5oy"/>
+                                    <constraint firstAttribute="width" secondItem="M1A-xd-p6g" secondAttribute="height" multiplier="20:11" id="ryl-Wj-CFF"/>
+                                    <constraint firstItem="sTo-qR-sda" firstAttribute="leading" secondItem="M1A-xd-p6g" secondAttribute="leading" constant="15" id="wo2-yb-RIT"/>
+                                </constraints>
+                            </view>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L5R-Jj-kpn">
+                                <rect key="frame" x="0.0" y="250" width="320" height="318"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="M1A-xd-p6g" firstAttribute="top" secondItem="m7g-ej-aAh" secondAttribute="bottom" id="HKJ-nE-WaM"/>
+                            <constraint firstItem="L5R-Jj-kpn" firstAttribute="leading" secondItem="7LZ-EU-5xI" secondAttribute="leading" id="QzT-du-glc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="M1A-xd-p6g" secondAttribute="trailing" constant="-20" id="Sli-0K-D8B"/>
+                            <constraint firstAttribute="trailing" secondItem="L5R-Jj-kpn" secondAttribute="trailing" id="VPV-Dg-zKy"/>
+                            <constraint firstItem="GNQ-7K-Y3D" firstAttribute="leading" secondItem="7LZ-EU-5xI" secondAttribute="leading" id="Wgf-Jk-9Ha"/>
+                            <constraint firstAttribute="trailing" secondItem="GNQ-7K-Y3D" secondAttribute="trailing" id="ZgD-Fe-JZ5"/>
+                            <constraint firstItem="GNQ-7K-Y3D" firstAttribute="top" secondItem="M1A-xd-p6g" secondAttribute="bottom" constant="10" id="clI-Uz-CT7"/>
+                            <constraint firstItem="L5R-Jj-kpn" firstAttribute="top" secondItem="GNQ-7K-Y3D" secondAttribute="bottom" id="o7V-hh-KXD"/>
+                            <constraint firstItem="M1A-xd-p6g" firstAttribute="leading" secondItem="7LZ-EU-5xI" secondAttribute="leadingMargin" constant="-20" id="qqJ-Il-4Uy"/>
+                            <constraint firstItem="qEr-pT-d7F" firstAttribute="top" secondItem="L5R-Jj-kpn" secondAttribute="bottom" id="vRG-Wm-4Tk"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <connections>
+                        <outlet property="commonIssueLabel" destination="GNQ-7K-Y3D" id="bgF-Mf-Gdn"/>
+                        <outlet property="integralLabel" destination="GOR-yG-Gpm" id="gyq-jF-nJN"/>
+                        <outlet property="signInButton" destination="sNJ-pv-jKJ" id="rVC-7Y-np6"/>
+                        <outlet property="signInView" destination="M1A-xd-p6g" id="0Ja-uD-lU1"/>
+                        <outlet property="webView" destination="L5R-Jj-kpn" id="rZb-e4-Jts"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bnd-35-dWm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="447" y="444"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_b4_01" width="111" height="112"/>
+    </resources>
+</document>

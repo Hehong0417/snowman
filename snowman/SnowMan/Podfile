@@ -1,0 +1,26 @@
+platform :ios, "7.0"
+inhibit_all_warnings!
+
+pod 'AFNetworking', '2.6.3'
+pod 'Masonry'
+pod 'CocoaLumberjack'
+pod 'Aspects'
+pod 'BlocksKit'
+pod 'MJExtension'
+pod 'SDWebImage'
+pod 'IQKeyboardManager', '3.0.0'
+pod 'MJRefresh'
+pod 'SVProgressHUD'
+pod 'MBProgressHUD'
+pod 'YYCategories'
+pod 'SDCycleScrollView'
+pod 'Pingpp/Alipay', '~> 2.1.0' #支付宝支付
+pod 'Pingpp/Wx', '~> 2.1.0'
+pod 'AMapLocation', '1.2.2' #定位SDK
+pod 'FXBlurView'
+pod 'ZYQAssetPickerController'
+pod 'DZNEmptyDataSet'
+
+target :SnowManTests, :exclusive => true do
+  # pod 'Kiwi'
+end

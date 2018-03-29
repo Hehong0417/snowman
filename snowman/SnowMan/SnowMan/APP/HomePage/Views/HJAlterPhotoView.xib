@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="T4i-EG-Y4b" customClass="HJAlterPhotoView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8eY-Us-jBZ">
+                    <rect key="frame" x="0.0" y="504" width="375" height="163"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xyp-uf-Nd6">
+                            <rect key="frame" x="0.0" y="40" width="375" height="1"/>
+                            <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="mEe-cd-Y62"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="clU-bq-Tcs">
+                            <rect key="frame" x="0.0" y="82" width="375" height="40"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="65I-Te-enk"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                            <state key="normal" title="从手机相册选取">
+                                <color key="titleColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="cancerClick:" destination="T4i-EG-Y4b" eventType="touchUpInside" id="Tla-Y1-dgD"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DD4-ht-mTy">
+                            <rect key="frame" x="0.0" y="122" width="375" height="1"/>
+                            <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="QxP-zk-zEg"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="亲，您可以上传三张照片" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c2W-uY-RsS">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="IKs-TS-QQS"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.30980392159999998" green="0.30980392159999998" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oBm-Eb-ovy">
+                            <rect key="frame" x="0.0" y="41" width="375" height="40"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="EYr-Vq-SWc"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                            <state key="normal" title="拍照">
+                                <color key="titleColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="cancerClick:" destination="T4i-EG-Y4b" eventType="touchUpInside" id="zHD-p7-S0N"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NaB-0S-8Ps">
+                            <rect key="frame" x="0.0" y="123" width="375" height="40"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="caA-fG-0Wo"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                            <state key="normal" title="取消">
+                                <color key="titleColor" red="0.97647058819999999" green="0.61960784310000006" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="cancerClick:" destination="T4i-EG-Y4b" eventType="touchUpInside" id="VRd-58-jQu"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0lg-o6-m5L">
+                            <rect key="frame" x="0.0" y="81" width="375" height="1"/>
+                            <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="ORN-1M-VEt"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="c2W-uY-RsS" secondAttribute="trailing" id="1vj-RF-zTh"/>
+                        <constraint firstItem="c2W-uY-RsS" firstAttribute="leading" secondItem="8eY-Us-jBZ" secondAttribute="leading" id="3qM-ai-lrz"/>
+                        <constraint firstItem="Xyp-uf-Nd6" firstAttribute="top" secondItem="c2W-uY-RsS" secondAttribute="bottom" id="4ar-Ix-Tfy"/>
+                        <constraint firstItem="oBm-Eb-ovy" firstAttribute="leading" secondItem="8eY-Us-jBZ" secondAttribute="leading" id="8op-Or-8XG"/>
+                        <constraint firstAttribute="bottom" secondItem="NaB-0S-8Ps" secondAttribute="bottom" id="AIK-f6-YgQ"/>
+                        <constraint firstAttribute="trailing" secondItem="Xyp-uf-Nd6" secondAttribute="trailing" id="Eil-MC-e3T"/>
+                        <constraint firstAttribute="height" constant="163" id="HrI-tp-fUC"/>
+                        <constraint firstAttribute="trailing" secondItem="0lg-o6-m5L" secondAttribute="trailing" id="ICx-uF-z3k"/>
+                        <constraint firstAttribute="trailing" secondItem="NaB-0S-8Ps" secondAttribute="trailing" id="TpT-1L-dVR"/>
+                        <constraint firstItem="Xyp-uf-Nd6" firstAttribute="leading" secondItem="8eY-Us-jBZ" secondAttribute="leading" id="UIV-8K-8ye"/>
+                        <constraint firstAttribute="trailing" secondItem="oBm-Eb-ovy" secondAttribute="trailing" id="Yo7-kY-jZ3"/>
+                        <constraint firstItem="DD4-ht-mTy" firstAttribute="leading" secondItem="8eY-Us-jBZ" secondAttribute="leading" id="Zio-9q-TlC"/>
+                        <constraint firstItem="clU-bq-Tcs" firstAttribute="top" secondItem="0lg-o6-m5L" secondAttribute="bottom" id="aTR-0r-OYV"/>
+                        <constraint firstItem="NaB-0S-8Ps" firstAttribute="leading" secondItem="8eY-Us-jBZ" secondAttribute="leading" id="egk-Pi-yQx"/>
+                        <constraint firstItem="oBm-Eb-ovy" firstAttribute="top" secondItem="Xyp-uf-Nd6" secondAttribute="bottom" id="hR4-tP-5Rt"/>
+                        <constraint firstItem="DD4-ht-mTy" firstAttribute="top" secondItem="clU-bq-Tcs" secondAttribute="bottom" id="hTh-rP-kNN"/>
+                        <constraint firstAttribute="trailing" secondItem="DD4-ht-mTy" secondAttribute="trailing" id="ikw-Pg-9Cy"/>
+                        <constraint firstItem="clU-bq-Tcs" firstAttribute="leading" secondItem="8eY-Us-jBZ" secondAttribute="leading" id="k5j-iF-ptG"/>
+                        <constraint firstItem="0lg-o6-m5L" firstAttribute="leading" secondItem="8eY-Us-jBZ" secondAttribute="leading" id="kZ2-sd-gv2"/>
+                        <constraint firstItem="NaB-0S-8Ps" firstAttribute="top" secondItem="DD4-ht-mTy" secondAttribute="bottom" id="nrb-zO-BJz"/>
+                        <constraint firstItem="0lg-o6-m5L" firstAttribute="top" secondItem="oBm-Eb-ovy" secondAttribute="bottom" id="pNE-Ui-Nj1"/>
+                        <constraint firstAttribute="trailing" secondItem="clU-bq-Tcs" secondAttribute="trailing" id="uaV-jU-3mY"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="0.55000000000000004" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="8eY-Us-jBZ" secondAttribute="bottom" id="8QL-VY-1jC"/>
+                <constraint firstItem="8eY-Us-jBZ" firstAttribute="leading" secondItem="T4i-EG-Y4b" secondAttribute="leading" id="9fl-7X-taO"/>
+                <constraint firstAttribute="bottom" secondItem="8eY-Us-jBZ" secondAttribute="bottom" id="gld-Gm-JCt"/>
+                <constraint firstAttribute="trailing" secondItem="8eY-Us-jBZ" secondAttribute="trailing" id="oWr-37-Qla"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <connections>
+                <outlet property="selectPhotoButton" destination="clU-bq-Tcs" id="5tJ-Ia-H99"/>
+                <outlet property="takePhotoButton" destination="oBm-Eb-ovy" id="KlN-fk-bXx"/>
+                <outlet property="warnLabel" destination="c2W-uY-RsS" id="Gas-pv-My8"/>
+                <outlet property="warnLabelHeight" destination="IKs-TS-QQS" id="7hN-k5-eoU"/>
+            </connections>
+            <point key="canvasLocation" x="388.5" y="225.5"/>
+        </view>
+    </objects>
+</document>

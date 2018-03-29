@@ -1,0 +1,2 @@
+/Users/zhipeng-mac/Library/Developer/Xcode/DerivedData/SnowMan-eqgxgfqcytbaiufixomvxvoyoluq/Build/Products/Debug-iphonesimulator/SnowMan.app
+

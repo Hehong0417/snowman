@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="mFa-GV-ZgM" customClass="HJExitLoginView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LCY-Pa-Jz8">
+                    <rect key="frame" x="35" y="186" width="250" height="114"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ds5-yQ-rnk">
+                            <rect key="frame" x="0.0" y="60" width="126" height="54"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="54" id="5ob-wX-VH7"/>
+                                <constraint firstAttribute="width" constant="126" id="MS5-El-9oF"/>
+                            </constraints>
+                            <state key="normal" title="取消">
+                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="cancelClick:" destination="mFa-GV-ZgM" eventType="touchUpInside" id="4dL-N1-gF3"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您确定退出账号吗？" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PEw-RT-sgE">
+                            <rect key="frame" x="0.0" y="8" width="250" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="eAj-px-oAY"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Moa-uB-s1v">
+                            <rect key="frame" x="0.0" y="60" width="250" height="1"/>
+                            <color key="backgroundColor" red="0.86274509799999999" green="0.86274509799999999" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="jmr-Lm-Obl"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1jF-Zm-YJS">
+                            <rect key="frame" x="125" y="60" width="1" height="54"/>
+                            <color key="backgroundColor" red="0.86274509799999999" green="0.86274509799999999" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="54" id="HNT-9d-DZT"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gbB-f9-R0m">
+                            <rect key="frame" x="125" y="60" width="125" height="53"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="125" id="bef-qT-SU1"/>
+                                <constraint firstAttribute="height" constant="53" id="dqZ-g6-Lha"/>
+                            </constraints>
+                            <state key="normal" title="确定">
+                                <color key="titleColor" red="0.95686274510000002" green="0.5450980392" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="certanClick:" destination="mFa-GV-ZgM" eventType="touchUpInside" id="GlO-80-ZSF"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Ds5-yQ-rnk" firstAttribute="top" secondItem="PEw-RT-sgE" secondAttribute="bottom" constant="8" id="0Lt-qB-vVO"/>
+                        <constraint firstAttribute="trailing" secondItem="Moa-uB-s1v" secondAttribute="trailing" id="24u-NU-ASx"/>
+                        <constraint firstItem="1jF-Zm-YJS" firstAttribute="leading" secondItem="LCY-Pa-Jz8" secondAttribute="leading" constant="125" id="6mW-A2-WJQ"/>
+                        <constraint firstItem="PEw-RT-sgE" firstAttribute="top" secondItem="LCY-Pa-Jz8" secondAttribute="top" constant="8" id="9Ic-HJ-GkY"/>
+                        <constraint firstAttribute="width" constant="250" id="9cg-BB-4QQ"/>
+                        <constraint firstItem="1jF-Zm-YJS" firstAttribute="top" secondItem="LCY-Pa-Jz8" secondAttribute="top" constant="60" id="AuU-WS-vbG"/>
+                        <constraint firstItem="PEw-RT-sgE" firstAttribute="leading" secondItem="LCY-Pa-Jz8" secondAttribute="leading" id="GoU-TP-PCf"/>
+                        <constraint firstAttribute="height" constant="114" id="LfG-3U-4Wf"/>
+                        <constraint firstItem="Ds5-yQ-rnk" firstAttribute="leading" secondItem="LCY-Pa-Jz8" secondAttribute="leading" id="Qgs-xZ-UBR"/>
+                        <constraint firstAttribute="trailing" secondItem="PEw-RT-sgE" secondAttribute="trailing" id="R3F-jk-Kfd"/>
+                        <constraint firstItem="Moa-uB-s1v" firstAttribute="top" secondItem="PEw-RT-sgE" secondAttribute="bottom" constant="8" id="Rbi-2S-VzN"/>
+                        <constraint firstItem="Moa-uB-s1v" firstAttribute="leading" secondItem="LCY-Pa-Jz8" secondAttribute="leading" id="VvN-VR-0Tg"/>
+                        <constraint firstItem="gbB-f9-R0m" firstAttribute="top" secondItem="PEw-RT-sgE" secondAttribute="bottom" constant="8" id="Xrf-Ep-g9t"/>
+                        <constraint firstAttribute="trailing" secondItem="gbB-f9-R0m" secondAttribute="trailing" id="pqV-pi-jpj"/>
+                        <constraint firstAttribute="trailing" secondItem="1jF-Zm-YJS" secondAttribute="trailing" constant="124" id="qNY-Ob-vOT"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="LCY-Pa-Jz8" firstAttribute="centerX" secondItem="mFa-GV-ZgM" secondAttribute="centerX" id="DXe-Is-OzF"/>
+                <constraint firstItem="LCY-Pa-Jz8" firstAttribute="top" secondItem="mFa-GV-ZgM" secondAttribute="top" constant="186" id="cA9-W8-i7x"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <connections>
+                <outlet property="baseView" destination="LCY-Pa-Jz8" id="pav-FA-j8e"/>
+                <outlet property="cancelButton" destination="Ds5-yQ-rnk" id="5vz-fO-NAE"/>
+                <outlet property="certanButton" destination="gbB-f9-R0m" id="xZ4-Ck-rVM"/>
+                <outlet property="warnLabel" destination="PEw-RT-sgE" id="VxY-zo-5ZE"/>
+            </connections>
+            <point key="canvasLocation" x="531" y="372"/>
+        </view>
+    </objects>
+</document>

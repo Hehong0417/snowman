@@ -1,0 +1,34 @@
+//
+//  HJ_PrefixHeader.pch
+//  HJAppTemplateProject
+//
+//  Created by zhipeng-mac on 16/4/13.
+//  Copyright © 2016年 hejing. All rights reserved.
+//
+
+#ifndef HJ_PrefixHeader_pch
+#define HJ_PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+// opensource
+#import <MJRefresh/MJRefresh.h>
+#import <MJExtension/MJExtension.h>
+#import <BlocksKit/BlocksKit+UIKit.h>
+#import <Masonry/Masonry.h>
+#import <Aspects/Aspects.h>
+#import <MBProgressHUD/MBProgressHUD.h>
+#import <UIImageView+WebCache.h>
+#import <UIButton+WebCache.h>
+#import <SVProgressHUD.h>
+#import <YYCategories/YYCategories.h>
+
+// config
+#import "APIAddress.h"
+#import "AppConfig.h"
+#import "AppMacros.h"
+#import "HJLog.h"
+#import "LHUtils.h"
+#import "HJProtocol.h"
+
+#endif /* HJ_PrefixHeader_pch */
